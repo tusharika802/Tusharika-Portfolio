@@ -1,15 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Tusharika Singh | SRE & DevOps Engineer</title>
-  <meta name="description" content="Portfolio of Tusharika Singh - SRE/DevOps Engineer specializing in AWS, serverless architectures, CI/CD pipelines and cloud infrastructure."/>
-  <link rel="preconnect" href="https://fonts.googleapis.com"/>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="style.css"/>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tusharika Singh</title>
+  <meta name="description" content="Portfolio of Tusharika Singh - AWS Certified Solutions Architect specializing in QA Testing, DevOps, Cloud
+  Engineering, CI/CD pipelines, and Full Stack Development." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%236c63ff'/><text x='50%' y='55%' dominant-baseline='central' text-anchor='middle' font-family='sans-serif' font-size='48' font-weight='bold' fill='white'>TS</text></svg>" />
 </head>
+
 <body>
+  <!-- GLOBAL TECH STACK RAIN BACKGROUND -->
+  <canvas id="globalTechRainCanvas"></canvas>
+
   <!-- NAV -->
   <nav id="navbar">
     <div class="nav-inner">
@@ -34,55 +44,97 @@
       <div class="orb orb3"></div>
       <div class="grid-overlay"></div>
     </div>
+
     <div class="hero-content">
-      <div class="hero-badge"><span class="badge-dot"></span>Open to Opportunities</div>
-      <h1 class="hero-name">Tusharika<br/><span class="gradient-text">Singh</span></h1>
-      <p class="hero-role"><span class="typing-cursor">SRE &amp; DevOps Engineer</span></p>
-      <p class="hero-desc">Engineer with <strong>1+ year of experience</strong> building scalable backend systems and cloud infrastructure on AWS. Specializing in CI/CD pipelines, serverless architectures, and automation.</p>
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Open to Opportunities
+      </div>
+
+      <h1 class="hero-name">
+        Tusharika<br />
+        <span class="gradient-text">Singh</span>
+      </h1>
+
+      <p class="hero-role"><span id="typingText">QA Testing, DevOps &amp; Cloud Engineer</span><span
+          class="typing-cursor"></span></p>
+
+      <p class="hero-desc">
+        B.Tech Computer Science graduate and <strong>AWS Certified Solutions Architect – Associate</strong>
+        with strong expertise in <strong>QA Testing, DevOps, and Cloud Engineering</strong>.
+        Experienced in Python, SQL, Docker, Selenium, PyTest, REST API testing, and CI/CD pipelines,
+        with a proven background building reliable cloud infrastructure, full-stack applications, and AI-powered
+        automation workflows.
+      </p>
+
       <div class="hero-actions">
         <a href="#projects" class="btn btn-primary">View My Work</a>
-        <a href="https://linkedin.com/in/tusharika802" target="_blank" class="btn btn-outline">LinkedIn</a>
-        <a href="https://github.com/tusharika802" target="_blank" class="btn btn-outline">GitHub</a>
-      </div>
-      <div class="hero-stats">
-        <div class="stat"><span class="stat-num">20+</span><span class="stat-label">Repositories</span></div>
-        <div class="stat-divider"></div>
-        <div class="stat"><span class="stat-num">AWS</span><span class="stat-label">Certified SA</span></div>
-        <div class="stat-divider"></div>
-        <div class="stat"><span class="stat-num">1+</span><span class="stat-label">Years Experience</span></div>
+        <a href="https://linkedin.com/in/tusharika802" target="_blank" rel="noopener noreferrer"
+          class="btn btn-outline">LinkedIn</a>
+        <a href="https://github.com/tusharika802" target="_blank" rel="noopener noreferrer"
+          class="btn btn-outline">GitHub</a>
       </div>
     </div>
-    <div class="scroll-indicator"><span></span></div>
   </section>
-
   <!-- ABOUT -->
   <section id="about">
     <div class="container">
       <div class="section-header">
         <span class="section-tag">01 / About</span>
-        <h2>Who I Am</h2>
+        <h2>Tusharika Singh</h2>
       </div>
       <div class="about-grid">
         <div class="about-avatar-wrap">
           <div class="about-avatar">
-            <img src="photo.png" alt="Tusharika Singh" onerror="this.parentElement.innerHTML='<div class=\'avatar-fallback\'>TS</div>'"/>
+            <img src="photo.png" alt="Tusharika Singh"
+              onerror="this.style.display='none'; document.getElementById('avatarFallback').style.display='flex';" />
+            <div id="avatarFallback" class="avatar-fallback" style="display:none;">TS</div>
           </div>
           <div class="about-card-info">
-            <div class="info-row"><span class="info-label">📍 Location</span><span>Gurugram, India</span></div>
-            <div class="info-row"><span class="info-label">🎓 Degree</span><span>B.Tech CSE</span></div>
+            <div class="info-row"><span class="info-label">📍 Location</span><span>Gurugram / Mohali, India</span></div>
+            <div class="info-row"><span class="info-label">🎓 Degree</span><span>B.Tech CSE (8.5/10.00 GPA)</span></div>
             <div class="info-row"><span class="info-label">📧 Email</span><span>tusharika0829@gmail.com</span></div>
             <div class="info-row"><span class="info-label">📞 Phone</span><span>+91 8146334499</span></div>
           </div>
         </div>
+
         <div class="about-text">
-          <p>I'm a passionate <strong>SRE/DevOps Engineer</strong> at SEESEC Infotech PVT Ltd, where I design and develop serverless architectures using <strong>AWS Lambda, API Gateway, and DynamoDB</strong> to deliver scalable, event-driven systems with near-zero downtime.</p>
-          <p>I lead AWS cost-optimization initiatives leveraging <strong>Compute Optimizer, CloudWatch metrics, and Reserved Instances</strong>. I also contribute to CloudExcellence Practices including architectural reviews, scalability testing, and AWS Well-Architected Framework adoption.</p>
-          <p>I built a complete <strong>Generative AI (GenAI) pipeline</strong> integrating OpenAI APIs and AWS services for automated text generation workflows.</p>
+          <p>I am a <strong>B.Tech Computer Science graduate</strong> and <strong>AWS Certified Solutions Architect –
+              Associate</strong> with a keen interest in technology-driven opportunities across <strong>QA Testing,
+              DevOps, and Cloud Engineering</strong>. Familiar with software testing, API testing, Python, SQL, AWS,
+            Docker, and CI/CD pipelines, I bring a solid foundation in software development and cloud engineering
+            dedicated to building reliable, high-quality software systems.</p>
+
+          <p>At <strong>SEESEC Infotech Pvt. Ltd.</strong> (Cloud Engineer / Technical Engineer Intern), I developed
+            responsive web applications with Angular and PostgreSQL, automated bill generation and email workflows using
+            AWS services, built AI-powered conversational chatbots using LangChain, and performed rigorous manual
+            testing on AWS Bedrock models (Amazon Nova, Nova Canvas) and AI virtual try-on platforms. In addition, I
+            deployed the TataPay project on AWS using Amazon EC2, Amazon ECR, and Elastic Load Balancer (ELB).</p>
+
+          <p>Previously at <strong>Softflix IT Solutions Pvt. Ltd.</strong> (Full Stack Developer Intern), I developed
+            responsive web applications with React.js, HTML, CSS, and JavaScript, designed and implemented RESTful APIs
+            using Node.js and Express.js, integrated frontend components with backend databases for seamless CRUD
+            operations, and collaborated on application debugging, testing, and performance optimization.</p>
+
           <div class="edu-card">
             <div class="edu-icon">🎓</div>
             <div>
               <strong>Bachelor of Technology, Computer Science</strong>
-              <span>Chandigarh Group of Colleges &nbsp;·&nbsp; GPA: 8.5/10 &nbsp;·&nbsp; 2021–2025</span>
+              <span>Chandigarh Group of Colleges, Landran, Mohali, Punjab &nbsp;·&nbsp; GPA: 8.5/10.00 &nbsp;·&nbsp;
+                2021–2025</span>
+            </div>
+          </div>
+
+          <div class="edu-card">
+            <div class="edu-icon">🏅</div>
+            <div>
+              <strong>
+                <a href="https://www.credly.com/badges/2853ce1e-51a1-4404-b612-47b3444be5ff/linked_in_profile"
+                  target="_blank" rel="noopener noreferrer">
+                  AWS Certified Solutions Architect – Associate ↗
+                </a>
+              </strong>
+              <span>Amazon Web Services (AWS) Certification &nbsp;·&nbsp; Credly Verified</span>
             </div>
           </div>
         </div>
@@ -97,54 +149,98 @@
         <span class="section-tag">02 / Experience</span>
         <h2>Work History</h2>
       </div>
+
       <div class="timeline">
+
+        <!-- EXPERIENCE 1: SEESEC INFOTECH -->
         <div class="timeline-item">
           <div class="timeline-dot"></div>
           <div class="timeline-card">
             <div class="tcard-header">
               <div>
-                <h3>SRE / DevOps Engineer</h3>
-                <span class="company">SEESEC Infotech PVT Ltd</span>
+                <h3>Cloud Engineer / Technical Engineer</h3>
+                <span class="company">SEESEC Infotech Pvt. Ltd. — Internship</span>
               </div>
               <div class="tcard-meta">
-                <span class="badge-time">July 2025 – Present</span>
+                <span class="badge-time">Nov 2025 – April 2026</span>
                 <span class="location-tag">Gurugram, India</span>
               </div>
             </div>
+
             <ul class="tcard-bullets">
-              <li>Designed serverless architectures using AWS Lambda, API Gateway &amp; DynamoDB to deliver scalable, event-driven systems with zero downtime.</li>
-              <li>Led AWS cost-optimization leveraging Compute Optimizer, CloudWatch metrics &amp; Reserved Instances.</li>
-              <li>Monitored CloudWatch Logs, distributed tracing for Lambda executions.</li>
-              <li>Contributed to CloudExcellence Practices: architectural reviews, scalability testing &amp; AWS Well-Architected Framework adoption.</li>
-              <li>Built complete GenAI pipeline integrating OpenAI APIs &amp; AWS services (Lambda + S3 + API Gateway).</li>
+              <li>Developed two responsive websites using Angular, implementing frontend components, user interfaces,
+                and application features, with PostgreSQL integration for database management.</li>
+              <li>Automated bill generation and email delivery to the accountant using AWS services, reducing manual
+                effort and streamlining billing workflows.</li>
+              <li>Developed an AI-powered chatbot using LangChain to enable conversational interactions and automate
+                responses to user queries.</li>
+              <li>Performed manual testing of AWS Bedrock models, including Amazon Nova and Nova Canvas, validating
+                functionality, output quality, and application behavior across different use cases.</li>
+              <li>Tested a third-party AI-powered virtual try-on application by evaluating clothing categories,
+                including Western wear, traditional outfits, gowns, and two-piece sets, on virtual models.</li>
+              <li>Documented testing observations, analyzed results, and prepared a PowerPoint presentation summarizing
+                virtual try-on testing, model performance, and findings.</li>
+              <li>Deployed the TataPay project on AWS using Amazon EC2, Amazon ECR, and Elastic Load Balancer (ELB),
+                managing container image deployment and configuring load balancing for application traffic distribution.
+              </li>
             </ul>
-            <div class="tcard-tags"><span>AWS Lambda</span><span>DynamoDB</span><span>API Gateway</span><span>GenAI</span><span>CloudWatch</span></div>
+
+            <div class="tcard-tags">
+              <span>AWS EC2</span>
+              <span>Amazon ECR</span>
+              <span>Elastic Load Balancer (ELB)</span>
+              <span>Angular</span>
+              <span>PostgreSQL</span>
+              <span>LangChain</span>
+              <span>AWS Bedrock</span>
+              <span>Amazon Nova</span>
+              <span>QA &amp; Testing</span>
+            </div>
           </div>
         </div>
+
+        <!-- EXPERIENCE 2: SOFTFLIX IT SOLUTIONS -->
         <div class="timeline-item">
           <div class="timeline-dot"></div>
           <div class="timeline-card">
             <div class="tcard-header">
               <div>
-                <h3>Cloud Engineer</h3>
-                <span class="company">SEESEC Infotech PVT Ltd</span>
+                <h3>Full Stack Developer</h3>
+                <span class="company">Softflix IT Solutions Pvt. Ltd. — Internship</span>
               </div>
               <div class="tcard-meta">
-                <span class="badge-time">Nov 2025 – Present</span>
-                <span class="location-tag">Gurugram, India</span>
+                <span class="badge-time">June 2025 – Oct 2025</span>
+                <span class="location-tag">Mohali, India</span>
               </div>
             </div>
+
             <ul class="tcard-bullets">
-              <li>Implemented end-to-end CI/CD pipelines using Docker &amp; Amazon ECR to automate application deployment on AWS.</li>
-              <li>Managed cloud workloads using AWS-native tools, troubleshooting production issues &amp; enhancing system availability.</li>
-              <li>Built and automated workflows using n8n integrated with LangGraph for event-driven orchestration.</li>
+              <li>Developed responsive web applications using HTML, CSS, JavaScript, and React.js, building interactive
+                and user-friendly interfaces.</li>
+              <li>Designed and implemented backend functionality using Node.js and Express.js, developing RESTful APIs
+                to support application features and data processing.</li>
+              <li>Integrated frontend components with backend APIs and databases, implementing CRUD operations, data
+                validation, and efficient data handling.</li>
+              <li>Collaborated on application debugging, testing, and performance optimization to improve functionality,
+                reliability, and user experience.</li>
             </ul>
-            <div class="tcard-tags"><span>Docker</span><span>Amazon ECR</span><span>CI/CD</span><span>n8n</span><span>LangGraph</span></div>
+
+            <div class="tcard-tags">
+              <span>React.js</span>
+              <span>Node.js</span>
+              <span>Express.js</span>
+              <span>JavaScript</span>
+              <span>REST APIs</span>
+              <span>CRUD Operations</span>
+              <span>Testing &amp; Debugging</span>
+            </div>
           </div>
         </div>
+
       </div>
     </div>
   </section>
+
 
   <!-- PROJECTS -->
   <section id="projects">
@@ -155,89 +251,181 @@
       </div>
       <div class="projects-grid">
 
+        <!-- RESUME PROJECT 1: TEST AUTOMATION FRAMEWORK -->
         <div class="project-card featured">
           <div class="project-glow"></div>
           <div class="project-top">
-            <span class="project-icon">🐳</span>
+            <span class="project-icon">🧪</span>
             <div class="project-links">
-              <a href="https://github.com/tusharika802" target="_blank" class="icon-link">↗</a>
+              <a href="https://github.com/tusharika802" target="_blank" rel="noopener noreferrer"
+                class="icon-link">↗</a>
             </div>
           </div>
-          <h3>AI Reel Generator Deployment</h3>
-          <p>Containerized deployment architecture using Docker. AWS ECR for secure storage and versioning of container images.</p>
-          <div class="project-tags"><span>Docker</span><span>AWS ECR</span><span>CI/CD</span></div>
+          <h3>Web &amp; API Test Automation Framework</h3>
+          <p>End-to-end automated testing framework for web applications and RESTful APIs, validating functionality,
+            payloads, and application stability.</p>
+          <ul class="project-bullets">
+            <li>Developed an end-to-end test automation framework using Selenium, Python, and PyTest with the Page
+              Object Model.</li>
+            <li>Automated functional, regression, positive, and negative test scenarios for authentication, search, form
+              validation, and core application workflows.</li>
+            <li>Implemented REST API testing using Python Requests and validated HTTP status codes, response payloads,
+              and error handling.</li>
+          </ul>
+          <div class="project-tags">
+            <span>Python</span>
+            <span>Selenium</span>
+            <span>PyTest</span>
+            <span>REST API</span>
+            <span>SQL</span>
+            <span>GitHub Actions</span>
+          </div>
         </div>
 
+        <!-- RESUME PROJECT 2: CHATBOT DEPLOYMENT ON AWS -->
+        <div class="project-card featured">
+          <div class="project-glow"></div>
+          <div class="project-top">
+            <span class="project-icon">🧠</span>
+            <div class="project-links">
+              <a href="https://github.com/tusharika802" target="_blank" rel="noopener noreferrer"
+                class="icon-link">↗</a>
+            </div>
+          </div>
+          <h3>Chatbot Deployment on AWS</h3>
+          <p>Production-grade containerized AI application stack deployed on AWS with automated security, secrets
+            management, and cloud backup workflows.</p>
+          <ul class="project-bullets">
+            <li>Deployed a containerized AI application stack on AWS EC2 using Docker Compose, with PostgreSQL, Redis,
+              and a self-hosted Ollama LLM.</li>
+            <li>Secured the deployment with Caddy for automatic HTTPS, least-privilege IAM roles, header-token webhook
+              authentication, and secrets stored in AWS SSM Parameter Store.</li>
+            <li>Automated infrastructure provisioning with a bootstrap script (security group, IAM role, versioned S3
+              bucket, encrypted EC2 with IMDSv2, Elastic IP) and nightly PostgreSQL backups to S3.</li>
+            <li>Built a Next.js chat frontend on Vercel with a server-side API proxy that keeps webhook secrets hidden
+              from browsers.</li>
+          </ul>
+          <div class="project-tags">
+            <span>AWS EC2</span>
+            <span>Docker Compose</span>
+            <span>Ollama</span>
+            <span>PostgreSQL</span>
+            <span>Redis</span>
+            <span>n8n</span>
+            <span>Next.js</span>
+            <span>SSM</span>
+          </div>
+        </div>
+
+        <!-- RESUME PROJECT 3: WHATSAPP AI ASSISTANT -->
         <div class="project-card">
           <div class="project-top">
-            <span class="project-icon">🎥</span>
+            <span class="project-icon">📁</span>
             <div class="project-links">
-              <a href="https://github.com/tusharika802/youtube-auto-uploader" target="_blank" class="icon-link">↗</a>
+              <a href="https://github.com/tusharika802" target="_blank" rel="noopener noreferrer"
+                class="icon-link">↗</a>
             </div>
           </div>
-          <h3>YouTube Auto Uploader</h3>
-          <p>Automated server deployment script that fetches video files from Google Drive and autonomously uploads them to YouTube daily using YouTube API v3 and OAuth2 authentication.</p>
-          <div class="project-tags"><span>Python</span><span>Google Drive API</span><span>YouTube API</span><span>OAuth2</span></div>
+          <h3>WhatsApp AI Assistant for Google Drive</h3>
+          <p>AI-powered conversational assistant to manage cloud files via natural language messages.</p>
+          <ul class="project-bullets">
+            <li>Developed an AI-powered WhatsApp assistant using n8n to manage Google Drive files through natural
+              language commands.</li>
+            <li>Integrated WhatsApp with Google Drive to automate file uploads, deletion, and editing through
+              conversational workflows.</li>
+            <li>Designed automated file management workflows to simplify document operations through WhatsApp
+              messages.</li>
+          </ul>
+          <div class="project-tags">
+            <span>n8n</span>
+            <span>WhatsApp</span>
+            <span>Google Drive</span>
+            <span>AI Automation</span>
+          </div>
         </div>
 
+        <!-- RESUME PROJECT 4: AUTOMATED BILLING -->
+        <div class="project-card">
+          <div class="project-top">
+            <span class="project-icon">🧾</span>
+            <div class="project-links">
+              <a href="https://github.com/tusharika802" target="_blank" rel="noopener noreferrer"
+                class="icon-link">↗</a>
+            </div>
+          </div>
+          <h3>Automated Billing &amp; Email Notification System</h3>
+          <p>Automated cloud workflow streamlining invoice generation and accounting document dispatch.</p>
+          <ul class="project-bullets">
+            <li>Developed an automated workflow to generate bills and deliver billing notifications and documents to
+              the accountant through email using AWS services.</li>
+            <li>Streamlined billing operations by reducing manual intervention and automating document delivery.</li>
+          </ul>
+          <div class="project-tags">
+            <span>AWS</span>
+            <span>Cloud Automation</span>
+            <span>Email Services</span>
+            <span>Python</span>
+          </div>
+        </div>
+
+        <!-- GITHUB PROJECT 5: REAL-TIME CHAT -->
         <div class="project-card">
           <div class="project-top">
             <span class="project-icon">💬</span>
             <div class="project-links">
-              <a href="https://github.com/tusharika802/ChatAppFrontend" target="_blank" class="icon-link">↗</a>
+              <a href="https://github.com/tusharika802/ChatAppFrontend" target="_blank" rel="noopener noreferrer"
+                class="icon-link">↗</a>
             </div>
           </div>
           <h3>Real-Time Chat Application</h3>
-          <p>Angular frontend + Node.js WebSocket backend with end-to-end encryption for secure instant messaging.</p>
-          <div class="project-tags"><span>Angular</span><span>Node.js</span><span>WebSocket</span><span>E2E Encryption</span></div>
+          <p>Full-stack instant messaging application built with an Angular frontend and a Node.js WebSocket backend
+            featuring end-to-end message encryption.</p>
+          <div class="project-tags">
+            <span>Angular</span>
+            <span>Node.js</span>
+            <span>WebSocket</span>
+            <span>E2E Encryption</span>
+          </div>
         </div>
 
+        <!-- GITHUB PROJECT 6: YOUTUBE AUTO UPLOADER -->
         <div class="project-card">
           <div class="project-top">
-            <span class="project-icon">🤖</span>
+            <span class="project-icon">🎥</span>
             <div class="project-links">
-              <a href="https://github.com/tusharika802/Chatbot-Langchain" target="_blank" class="icon-link">↗</a>
+              <a href="https://github.com/tusharika802/youtube-auto-uploader" target="_blank" rel="noopener noreferrer"
+                class="icon-link">↗</a>
             </div>
           </div>
-          <h3>AI Chatbot using LangChain &amp; n8n</h3>
-          <p>Intelligent AI-powered chatbot using LangChain integrated with n8n workflow automation for conversational workflows.</p>
-          <div class="project-tags"><span>LangChain</span><span>n8n</span><span>AI Automation</span></div>
-        </div>
-
-        <div class="project-card">
-          <div class="project-top">
-            <span class="project-icon">📱</span>
-            <div class="project-links">
-              <a href="https://github.com/tusharika802" target="_blank" class="icon-link">↗</a>
-            </div>
+          <h3>YouTube Auto Uploader</h3>
+          <p>Automated server script that fetches video files from Google Drive and autonomously uploads and schedules
+            them on YouTube daily via YouTube API v3 and OAuth2.</p>
+          <div class="project-tags">
+            <span>Python</span>
+            <span>Google Drive API</span>
+            <span>YouTube API</span>
+            <span>OAuth2</span>
           </div>
-          <h3>AI-Driven WhatsApp Automation</h3>
-          <p>n8n-based WhatsApp chatbot to automate conversational workflows. Google Drive integration for dynamic file management.</p>
-          <div class="project-tags"><span>n8n</span><span>WhatsApp API</span><span>Google Drive</span></div>
         </div>
 
-        <div class="project-card">
-          <div class="project-top">
-            <span class="project-icon">🛒</span>
-            <div class="project-links">
-              <a href="https://github.com/tusharika802/QuickPick" target="_blank" class="icon-link">↗</a>
-            </div>
-          </div>
-          <h3>QuickPick — Online Bookstore</h3>
-          <p>Full-stack bookstore with ASP.NET MVC, responsive UI, cart management, OAuth login, Stripe payments &amp; Twilio SMS.</p>
-          <div class="project-tags"><span>ASP.NET MVC</span><span>C#</span><span>Stripe</span><span>OAuth</span></div>
-        </div>
-
+        <!-- GITHUB PROJECT 7: PNEUMONIA DETECTION -->
         <div class="project-card">
           <div class="project-top">
             <span class="project-icon">🫁</span>
             <div class="project-links">
-              <a href="https://github.com/tusharika802/Pneumonia-Detection-Model" target="_blank" class="icon-link">↗</a>
+              <a href="https://github.com/tusharika802/Pneumonia-Detection-Model" target="_blank"
+                rel="noopener noreferrer" class="icon-link">↗</a>
             </div>
           </div>
           <h3>Pneumonia Detection Model</h3>
-          <p>ML model detecting pneumonia via X-ray image classification using CNN and Python.</p>
-          <div class="project-tags"><span>Python</span><span>CNN</span><span>Machine Learning</span></div>
+          <p>Medical image diagnostic machine learning model detecting pneumonia through chest X-ray classification
+            using Convolutional Neural Networks (CNN) and Python.</p>
+          <div class="project-tags">
+            <span>Python</span>
+            <span>CNN</span>
+            <span>Deep Learning</span>
+            <span>Computer Vision</span>
+          </div>
         </div>
 
       </div>
@@ -252,7 +440,7 @@
         <h2>Research Papers</h2>
       </div>
       <div class="publications-grid">
-        
+
         <a href="https://imanagerpublications.com/article/20913" target="_blank" class="publication-card">
           <div class="pub-top">
             <span class="pub-icon">📊</span>
@@ -260,7 +448,8 @@
           </div>
           <h3>Machine Learning: A Multifaceted Exploration of Trends, Regulations, and Global Impact</h3>
           <p class="pub-journal">i-manager's Journal on Future Engineering and Technology (JFET)</p>
-          <p class="pub-desc">A comprehensive exploration of machine learning research advancements, industry use-cases, and global policy &amp; regulatory landscapes.</p>
+          <p class="pub-desc">A comprehensive exploration of machine learning research advancements, industry use-cases,
+            and global policy &amp; regulatory landscapes.</p>
           <span class="pub-link">Read Publication &nbsp;↗</span>
         </a>
 
@@ -271,7 +460,8 @@
           </div>
           <h3>A Multilayered Study of Trends, Ethical Agendas for Machine Learning, and Worldwide Impact</h3>
           <p class="pub-journal">Asian Journal of Computer Science and Technology (AJCST)</p>
-          <p class="pub-desc">An in-depth investigation into the global influence of machine learning and the critical ethical agendas guiding its implementation.</p>
+          <p class="pub-desc">An in-depth investigation into the global influence of machine learning and the critical
+            ethical agendas guiding its implementation.</p>
           <span class="pub-link">Read Publication &nbsp;↗</span>
         </a>
 
@@ -282,7 +472,8 @@
           </div>
           <h3>An Integrated AI-Powered Decision Support System for Sustainable Farming in India</h3>
           <p class="pub-journal">CGC Group Project &amp; Research Paper</p>
-          <p class="pub-desc">Proposes a Decision Support System leveraging a novel Quantified Sustainability Scoring Model (QSSM) and Scheme Matching for farmers.</p>
+          <p class="pub-desc">Proposes a Decision Support System leveraging a novel Quantified Sustainability Scoring
+            Model (QSSM) and Scheme Matching for farmers.</p>
           <span class="pub-link">Read Paper PDF &nbsp;↗</span>
         </a>
 
@@ -293,7 +484,8 @@
           </div>
           <h3>Study of Corrosion and its Preventive Measures</h3>
           <p class="pub-journal">i-manager's Journal on Future Engineering and Technology (JFET)</p>
-          <p class="pub-desc">A detailed analysis of corrosion mechanisms in industrial components and practical methods for prevention and materials protection.</p>
+          <p class="pub-desc">A detailed analysis of corrosion mechanisms in industrial components and practical methods
+            for prevention and materials protection.</p>
           <span class="pub-link">Read Publication &nbsp;↗</span>
         </a>
 
@@ -306,41 +498,136 @@
     <div class="container">
       <div class="section-header">
         <span class="section-tag">05 / Skills</span>
-        <h2>Tech Stack</h2>
-      </div>
-      <div class="skills-wrapper">
-        <div class="skill-group">
-          <h4>Languages</h4>
-          <div class="skill-pills"><span>C#</span><span>.NET</span><span>Node.js</span><span>Python</span><span>Angular</span><span>TypeScript</span><span>Java</span></div>
-        </div>
-        <div class="skill-group">
-          <h4>Cloud &amp; DevOps</h4>
-          <div class="skill-pills"><span>AWS Lambda</span><span>API Gateway</span><span>DynamoDB</span><span>Amazon ECR</span><span>CloudWatch</span><span>Docker</span><span>CI/CD</span></div>
-        </div>
-        <div class="skill-group">
-          <h4>Tools &amp; Platforms</h4>
-          <div class="skill-pills"><span>GitHub</span><span>n8n</span><span>LangChain</span><span>LangGraph</span><span>Odoo</span><span>Android Studio</span></div>
-        </div>
-        <div class="skill-group">
-          <h4>Databases</h4>
-          <div class="skill-pills"><span>PostgreSQL</span><span>MySQL</span><span>CI/CD SQL</span><span>DynamoDB</span></div>
-        </div>
-        <div class="skill-group">
-          <h4>Concepts</h4>
-          <div class="skill-pills"><span>Serverless</span><span>Microservices</span><span>REST API</span><span>GenAI</span><span>DevOps Fundamentals</span><span>OOPS</span><span>Data Management</span></div>
-        </div>
+        <h2>Technical Skills</h2>
       </div>
 
+      <div class="skills-wrapper">
+
+        <!-- Programming Languages -->
+        <div class="skill-group">
+          <h4>Languages</h4>
+          <div class="skill-pills">
+            <span>.NET</span>
+            <span>C#</span>
+            <span>Python</span>
+            <span>Node.js</span>
+            <span>SQL</span>
+          </div>
+        </div>
+
+        <!-- QA & Software Testing -->
+        <div class="skill-group">
+          <h4>QA &amp; Software Testing</h4>
+          <div class="skill-pills">
+            <span>Selenium</span>
+            <span>PyTest</span>
+            <span>REST API Testing</span>
+            <span>Functional Testing</span>
+            <span>Regression Testing</span>
+            <span>Integration Testing</span>
+            <span>Test Automation</span>
+          </div>
+        </div>
+
+        <!-- AWS Services -->
+        <div class="skill-group">
+          <h4>AWS Cloud</h4>
+          <div class="skill-pills">
+            <span>EC2</span>
+            <span>S3</span>
+            <span>IAM</span>
+            <span>Lambda</span>
+            <span>API Gateway</span>
+            <span>DynamoDB</span>
+            <span>ECR</span>
+            <span>VPC</span>
+            <span>Route 53</span>
+            <span>CloudWatch</span>
+            <span>SSM Parameter Store</span>
+          </div>
+        </div>
+
+        <!-- DevOps & CI/CD -->
+        <div class="skill-group">
+          <h4>DevOps &amp; CI/CD</h4>
+          <div class="skill-pills">
+            <span>Docker</span>
+            <span>Docker Compose</span>
+            <span>Kubernetes</span>
+            <span>Jenkins</span>
+            <span>GitHub Actions</span>
+            <span>CI/CD</span>
+            <span>Linux</span>
+          </div>
+        </div>
+
+        <!-- Development -->
+        <div class="skill-group">
+          <h4>Development</h4>
+          <div class="skill-pills">
+            <span>Node.js</span>
+            <span>Angular</span>
+            <span>React.js</span>
+            <span>REST APIs</span>
+            <span>PostgreSQL</span>
+          </div>
+        </div>
+
+        <!-- Tools -->
+        <div class="skill-group">
+          <h4>Tools</h4>
+          <div class="skill-pills">
+            <span>Git</span>
+            <span>GitHub</span>
+            <span>n8n</span>
+            <span>CloudWatch</span>
+            <span>Jenkins</span>
+          </div>
+        </div>
+
+        <!-- Familiar Technologies -->
+        <div class="skill-group">
+          <h4>Familiar Technologies</h4>
+          <div class="skill-pills">
+            <span>Serverless Architecture</span>
+            <span>Microservices</span>
+            <span>Infrastructure as Code</span>
+            <span>Cloud Monitoring</span>
+            <span>Cloud Automation</span>
+            <span>GenAI</span>
+          </div>
+        </div>
+
+        <!-- Core Concepts -->
+        <div class="skill-group">
+          <h4>Core Concepts</h4>
+          <div class="skill-pills">
+            <span>DevOps</span>
+            <span>CI/CD</span>
+            <span>DBMS</span>
+            <span>OOPS</span>
+            <span>REST APIs</span>
+            <span>Infrastructure as Code</span>
+            <span>Cloud Computing</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Certifications -->
       <div class="certs-section">
         <h3>Achievements &amp; Certifications</h3>
         <div class="certs-grid">
-          <a href="https://www.credly.com/badges/2853ce1e-51a1-4404-b612-47b3444be5ff/linked_in_profile" target="_blank" class="cert-card clickable-cert">
+
+          <a href="https://www.credly.com/badges/2853ce1e-51a1-4404-b612-47b3444be5ff/linked_in_profile" target="_blank"
+            rel="noopener noreferrer" class="cert-card clickable-cert">
             <span class="cert-icon">🏅</span>
             <div>
-              <strong>AWS Certified Solutions Architect Associate</strong>
+              <strong>AWS Certified Solutions Architect – Associate</strong>
               <span>Credly &nbsp;↗</span>
             </div>
           </a>
+
           <div class="cert-card">
             <span class="cert-icon">🏆</span>
             <div>
@@ -348,6 +635,7 @@
               <span>Participation Certificate</span>
             </div>
           </div>
+
           <div class="cert-card">
             <span class="cert-icon">🔬</span>
             <div>
@@ -355,6 +643,7 @@
               <span>Participation Certificate</span>
             </div>
           </div>
+
         </div>
       </div>
     </div>
@@ -369,7 +658,8 @@
       </div>
       <div class="contact-grid">
         <div class="contact-info">
-          <p class="contact-intro">I'm currently open to new opportunities. Whether you have a question or just want to say hi, feel free to reach out!</p>
+          <p class="contact-intro">I'm currently open to new opportunities. Whether you have a question or just want to
+            say hi, feel free to reach out!</p>
           <div class="contact-links">
             <a href="mailto:tusharika0829@gmail.com" class="contact-link-card">
               <span class="cl-icon">📧</span>
@@ -392,17 +682,18 @@
         <form class="contact-form" id="contactForm">
           <div class="form-group">
             <label for="name">Name</label>
-            <input type="text" id="name" name="name" placeholder="Your name" required/>
+            <input type="text" id="name" name="name" placeholder="Your name" required />
           </div>
           <div class="form-group">
             <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="your@email.com" required/>
+            <input type="email" id="email" name="email" placeholder="your@email.com" required />
           </div>
           <div class="form-group">
             <label for="message">Message</label>
             <textarea id="message" name="message" rows="5" placeholder="What's on your mind?" required></textarea>
           </div>
           <button type="submit" class="btn btn-primary w-full" id="submitBtn">Send Message ✉️</button>
+          <div id="formStatus" class="form-status" style="display: none; margin-top: 1rem;"></div>
         </form>
       </div>
     </div>
@@ -412,7 +703,7 @@
   <footer>
     <div class="footer-inner">
       <span class="nav-logo">TS<span class="dot">.</span></span>
-      <p>Designed &amp; Built by <strong>Tusharika Singh</strong> · 2025</p>
+      <p>Designed &amp; Built by <strong>Tusharika Singh</strong> · 2026</p>
       <div class="footer-links">
         <a href="https://linkedin.com/in/tusharika802" target="_blank">LinkedIn</a>
         <a href="https://github.com/tusharika802" target="_blank">GitHub</a>
@@ -423,4 +714,5 @@
 
   <script src="main.js"></script>
 </body>
+
 </html>
