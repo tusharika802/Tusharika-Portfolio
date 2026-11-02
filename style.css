@@ -297,6 +297,18 @@ a {
   color: var(--text);
 }
 
+.hero-cert-link {
+  color: var(--accent2);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color var(--transition), text-shadow var(--transition);
+}
+
+.hero-cert-link:hover {
+  color: var(--cyan);
+  text-shadow: 0 0 10px rgba(34, 211, 238, 0.4);
+}
+
 .hero-actions {
   display: flex;
   gap: 1rem;
