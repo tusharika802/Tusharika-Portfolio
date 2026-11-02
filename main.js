@@ -20,20 +20,6 @@ new IntersectionObserver((entries) => {
   new IntersectionObserver((e) => e.forEach(en => { if (en.isIntersecting) { navLinks.forEach(l => { l.style.color = l.getAttribute('href') === '#' + en.target.id ? 'var(--accent2)' : ''; }); en.target.classList.add('in-view'); } }), { rootMargin: '-40% 0px -55% 0px' }).observe(s)
 );
 
-// ===== MULTI-ROLE TYPING ANIMATION =====
-(function () {
-  var el = document.getElementById('typingText');
-  if (!el) return;
-  var roles = ['QA Testing & Automation', 'DevOps & Cloud Engineer', 'AWS Certified Solutions Architect', 'Full Stack Developer', 'Software Engineer'];
-  var ri = 0, ci = 0, del = false;
-  function tick() {
-    var cur = roles[ri];
-    if (!del) { el.textContent = cur.slice(0, ci + 1); ci++; if (ci === cur.length) { del = true; setTimeout(tick, 2000); return; } }
-    else { el.textContent = cur.slice(0, ci - 1); ci--; if (ci === 0) { del = false; ri = (ri + 1) % roles.length; } }
-    setTimeout(tick, del ? 45 : 80);
-  }
-  tick();
-})();
 
 // ===== COUNTER ANIMATION =====
 (function () {
